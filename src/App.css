@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #b2bec3;
+}
+
+.youtube{
+  border: 10px #2d3436 dashed;
+}
