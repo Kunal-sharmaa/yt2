@@ -24,9 +24,11 @@ class App extends React.Component {
     handleVideoSelect = (video) => {
         this.setState({selectedVideo: video})
     }
-
+    
     render() {
+        
         return (
+            
             <div className='ui container' style={{marginTop: '1em'}}>
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
                 <div className='ui grid'>
@@ -40,6 +42,7 @@ class App extends React.Component {
                     </div>
                 </div>
             </div>
+            
         )
     }
 }

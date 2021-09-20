@@ -11,11 +11,12 @@ class Searchbar extends React.Component {
         event.preventDefault();
         this.props.handleFormSubmit(this.state.term);
     }
+    
 
     render() {
         
         return (
-            <>
+            <div className="">
             <h2  style={{textAlign:"center"}}><img style={{width:'200px', height:'100px',justifyContent:'center'}} src='https://www.thatitguy.net/wp-content/uploads/2018/08/1280px-Logo_of_YouTube_2015-2017.svg.png' alt="youtube logo"></img></h2>
             <div className='search-bar ui segment'>
                 <form onSubmit={this.handleSubmit} className='ui form'>
@@ -25,7 +26,8 @@ class Searchbar extends React.Component {
                     </div>
                 </form>
             </div>
-            </>
+            </div>
+            
         )
     }
 }
