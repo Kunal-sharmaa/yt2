@@ -1,4 +1,5 @@
 import React from 'react';
+import Yt from "./assets/youtube.png";
 
 class Searchbar extends React.Component {
     handleChange = (event) => {
@@ -17,7 +18,7 @@ class Searchbar extends React.Component {
         
         return (
             <div className="">
-            <h2  style={{textAlign:"center"}}><img style={{width:'200px', height:'100px',justifyContent:'center'}} src='https://www.thatitguy.net/wp-content/uploads/2018/08/1280px-Logo_of_YouTube_2015-2017.svg.png' alt="youtube logo"></img></h2>
+            <h2  style={{textAlign:"center"}}><img style={{width:'200px', height:'100px',justifyContent:'center'}} src={Yt} alt="youtube logo"></img></h2>
             <div className='search-bar ui segment'>
                 <form onSubmit={this.handleSubmit} className='ui form'>
                     <div className='field'>
